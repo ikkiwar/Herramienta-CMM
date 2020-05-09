@@ -1,6 +1,6 @@
 import React from 'react';
 import Buscador from '../Components/Buscador';
-import Plantillas from '../Components/Plantillas';
+
 
 
 class WF extends React.Component {
@@ -11,8 +11,6 @@ class WF extends React.Component {
                 <style>{'body { background-color: #9E2723; }'}</style>
                 <br/>
                 <Buscador/>
-                <br/>
-                <Plantillas/>
             </div>
         )
 
