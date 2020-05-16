@@ -21,16 +21,16 @@ const Buscador = () => {
   function handleItem(item) {
     console.log(item.value)
     setItem(item.value);
-    if (item.value == "descuento") {
+    if (item.value === "descuento") {
       setRuta("Linea Fija Alambrico > Reclamos >" +
         "Reclamos de facturacion > CTE solicita descuento de cuota fija")
-    } else if (item.value == "vigente") {
+    } else if (item.value === "vigente") {
 
       setRuta("ruta vigente");
      
 
 
-    } else if (item.value == "vencida") {
+    } else if (item.value === "vencida") {
       setRuta("ruta vencida")
       
     }

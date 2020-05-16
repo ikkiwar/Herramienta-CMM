@@ -1,4 +1,12 @@
 import React from 'react';
+import '../Components/Styles/Home.css';
+import Claro from '../Components/Img/claro.png';
+import Dth from '../Components/Img/dth.jpg';
+import Inalambrico from '../Components/Img/inalambrico.jpeg';
+import Inter from '../Components/Img/internet.jpeg';
+import Server from '../Components/Img/internet2.jpeg';
+import Phone from '../Components/Img/phone.jpeg';
+import Hfc from '../Components/Img/tvhfc.jpeg';
 
 class Home extends React.Component{
 
@@ -6,17 +14,17 @@ class Home extends React.Component{
     render(){
         return(
             <div>
-                 <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
+                 <div className="menu-btn">
+        <i className="fas fa-bars fa-2x"></i>
     </div>
 
-    <div class="container">
+    <div className="container">
      
-        <nav class="nav-main">
+        <nav className="nav-main">
            
-            <img src="img/claro.png" alt="Claro" class="nav-brand">
+            <img src={Claro} alt="Claro" className="nav-brand"/>
         
-            <ul class="nav-menu">
+            <ul className="nav-menu">
                 <li>
                     <a href="#">Inicio</a>
                 </li>
@@ -41,63 +49,63 @@ class Home extends React.Component{
             </ul>
 
            
-            <ul class="nav-menu-right">
+            <ul className="nav-menu-right">
                 <li>
                     <a href="#">
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                     </a>
                 </li>
             </ul>
         </nav>
-        <hr>
+      <hr className="hr"/>
 
        
-        <header class="novedades">
+        <header className="novedades">
                 <h2>Novedades</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde exercitationem reiciendis, libero alias perspiciatis ratione fugiat, optio cumque odio voluptate eum, architecto adipisci consectetur sapiente atque molestiae quasi dolor totam.</p>
 
-                <a href="#" class="btn"> Mas Novedades <i class="fas fa-angle-double-right"></i></a>
+                <a href="#" className="btn"> Mas Novedades <i className="fas fa-angle-double-right"></i></a>
 
         </header>
 
       
 
-        <div class="procesos-list">
+        <div className="procesos-list">
             <div>
-                <img src="img/phone.jpeg" alt="Linea Fija">
+                <img src={Phone} alt="Linea Fija"/>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="/lf/lf.html">Detalles <i class="fas fa-angle-double-right"></i></a>
+                <a href="/lf/lf.html">Detalles <i className="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/internet.jpeg" alt="Internet">
+                <img src={Inter} alt="Internet"/>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i class="fas fa-angle-double-right"></i></a>
+                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/internet2.jpeg" alt="Internet HFC">
+                <img src={Server} alt="Internet HFC"/>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i class="fas fa-angle-double-right"></i></a>
+                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/tvhfc.jpeg" alt="Claro TV">
+                <img src={Hfc} alt="Claro TV"/>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i class="fas fa-angle-double-right"></i></a>
+                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/dth.jpg" alt="DTH">
+                <img src={Dth} alt="DTH"/>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i class="fas fa-angle-double-right"></i></a>
+                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
             </div>
             <div>
-                <img src="img/inalambrico.jpeg" alt="Inalambrico">
+                <img src={Inalambrico} alt="Inalambrico"/>
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i class="fas fa-angle-double-right"></i></a>
+                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
             </div>
 
 
@@ -108,17 +116,17 @@ class Home extends React.Component{
 
     </div>
 
-    <section class="social">
+    <section className="social">
         <p>Visitanos</p>
-        <div class="links">
+        <div className="links">
             <a href="#">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
             </a>
             <a href="#">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
             </a>
             <a href="#">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
             </a>
 
         </div>
@@ -126,8 +134,8 @@ class Home extends React.Component{
 
     </section>
 
-    <footer class="footer">
-        <h3>Elaborado por: Pedro Canjura</h3>
+    <footer className="footer">
+        <h5>Elaborado por: Pedro Canjura</h5>
         
     </footer>
             </div>
