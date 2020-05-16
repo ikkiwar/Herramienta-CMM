@@ -16,6 +16,8 @@ const Buscador = () => {
     { value: 'vencida', label: 'Solicitud Vencida' }
   ]
 
+  
+
   function handleItem(item) {
     console.log(item.value)
     setItem(item.value);

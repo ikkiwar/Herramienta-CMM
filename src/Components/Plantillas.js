@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './Styles/Plantillas.css';
 
-/* class Plantillas extends React.Component {
+class Plantillas extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             cadena: "NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
             "\nCONTACTOS:\nFACTURA:\nCOMENTARIO DEL RECLAMO:"
-        }
+        };
+        this.hadleChange = this.hadleChange.bind(this); // y recuerden chicos hay que hacer bind a sus eventos 
     }
 
     componentWillReceiveProps(nextProps) {
@@ -40,19 +41,29 @@ import './Styles/Plantillas.css';
         }
     }
 
+    hadleChange(event){
+        console.log(event)
+        this.setState({
+            cadena: event.target.value
+          });
+    }
+
     render() {
         console.log("el valor actual es:", this.state.cadena)
         return (
             <div>
-                <textarea className="plantilla" rows="4" cols="40" value={this.state.cadena} >
+                <textarea className="plantilla" rows="4" cols="40" value={this.state.cadena} 
+                onChange={this.hadleChange}
+                >
+
                 </textarea>
             </div>
         )
     }
 
-} */
+}
 
-const Plantillas = (props) => {
+/*  const Plantillas = (props) => {
 
     const [texto, setTexto] = useState("NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
         "\nCONTACTOS:\nFACTURA:\nCOMENTARIO DEL RECLAMO:")
@@ -77,12 +88,13 @@ const Plantillas = (props) => {
 
     return (
         <div>
-            <textarea className="plantilla" rows="4" cols="40" value={texto}>
+            <textarea className="plantilla" rows="4" cols="40" value={texto} >
+                
             </textarea>
         </div>
     )
 
-}
-
+} */
+ 
 
 export default Plantillas;
