@@ -5,16 +5,14 @@ import Plantillas from '../Components/Plantillas';
 
 
 
-const Buscador = () => {
+const Buscador = (props) => {
 
-  const [item, setItem] = useState("Descuento")
+  const defecto = props.defecto;
+
+  const [item, setItem] = useState({defecto})
   const [ruta, setRuta] = useState("Linea Fija Alambrico > Reclamos >" +
     "Reclamos de facturacion > CTE solicita descuento de cuota fija")
-  const options = [
-    { value: 'descuento', label: 'Descuento' },
-    { value: 'vigente', label: 'Solicitud Vigente' },
-    { value: 'vencida', label: 'Solicitud Vencida' }
-  ]
+  const options = props.valores ;
 
   
 

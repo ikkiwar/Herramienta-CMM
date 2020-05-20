@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import WF from './Pages/WF';
-import  Home from './Pages/Home'
+import  App from './Components/App';
+
 
 
 ReactDOM.render(
-  <Home/>,
+  <App/>,
   document.getElementById('root')
 );
 

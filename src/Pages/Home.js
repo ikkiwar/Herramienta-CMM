@@ -1,6 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../Components/Styles/Home.css';
-import Claro from '../Components/Img/claro.png';
+import Topbar from '../Components/Topbar';
 import Dth from '../Components/Img/dth.jpg';
 import Inalambrico from '../Components/Img/inalambrico.jpeg';
 import Inter from '../Components/Img/internet.jpeg';
@@ -20,44 +21,8 @@ class Home extends React.Component{
 
     <div className="container">
      
-        <nav className="nav-main">
-           
-            <img src={Claro} alt="Claro" className="nav-brand"/>
-        
-            <ul className="nav-menu">
-                <li>
-                    <a href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="./lf/lf.html">Linea Fija</a>
-                </li>
-                <li>
-                    <a href="#">Turbonett</a>
-                </li>
-                <li>
-                    <a href="#">Internet HFC</a>
-                </li>
-                <li>
-                    <a href="#">Claro TV HFC</a>
-                </li>
-                <li>
-                    <a href="#">Claro TV DTH</a>
-                </li>
-                <li>
-                    <a href="#">Servicios Inalambricos</a>
-                </li>              
-            </ul>
-
-           
-            <ul className="nav-menu-right">
-                <li>
-                    <a href="#">
-                        <i className="fas fa-search"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-      <hr className="hr"/>
+      <Topbar/>
+      
 
        
         <header className="novedades">
