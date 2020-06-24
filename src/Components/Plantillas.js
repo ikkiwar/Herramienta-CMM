@@ -5,6 +5,7 @@ class Plantillas extends React.Component {
 
     constructor(props) {
         super(props);
+        // este es el valor por defecto que toma la plantilla
         this.state = {
             cadena: "NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
             "\nCONTACTOS:\nFACTURA:\nCOMENTARIO DEL RECLAMO:"

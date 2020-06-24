@@ -8,17 +8,22 @@ import '../Components/Styles/WF.css';
 class LineaFija extends React.Component {
 
     render() {
+        // estos valores son los que se mostraran en la lista de procesos 
     const  valores=  [
             { value: 'descuento', label: 'Descuento' },
-            { value: 'Bajos', label: 'Cables Bajos' },
-            { value: 'class', label: 'Servicios Class' },
+            { value: 'vigente', label: 'Cables Bajos' },
+            { value: 'vencida', label: 'Servicios Class' },
 
           ]
         return (
             <div className="wf">
                 <Topbar/>
                 <br/>
-                <Buscador valores={valores} defecto={'Descuentito'}/>
+                <Buscador 
+                valores={valores} 
+                defecto={'Descuento'}  
+                ruta={'Linea Fija Alambrico > Reclamos > Reclamos de facturacion > CTE solicita descuento de cuota fija'}
+                />
             </div>
         )
 

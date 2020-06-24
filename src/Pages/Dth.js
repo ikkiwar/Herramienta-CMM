@@ -1,11 +1,20 @@
 import React from 'react';
 import Topbar from '../Components/Topbar';
+import Buscador from '../Components/Buscador';
 
 class Dth extends React.Component{
     render(){
-        return(
-            <div>
+        const  valores=  [
+            { value: 'descuento', label: 'Descuento' },
+            { value: 'Bajos', label: 'Cables Bajos' },
+            { value: 'class', label: 'Servicios Class' },
+
+          ]
+        return (
+            <div className="wf">
                 <Topbar/>
+                <br/>
+                <Buscador valores={valores} defecto={'Descuentito'}/>
             </div>
         )
     }

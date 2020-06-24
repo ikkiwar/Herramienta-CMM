@@ -38,39 +38,76 @@ class Home extends React.Component{
         <div className="procesos-list">
             <div>
                 <img src={Phone} alt="Linea Fija"/>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="/lf/lf.html">Detalles <i className="fas fa-angle-double-right"></i></a>
+                <h3>Linea Fija.</h3>
+                <p>Aqui encontraras los siguientes WF:
+                    <br/> -Cables Bajos 
+                    <br/> -Servicios Class
+                    <br/> -SVA
+                    <br/> -ETC...
+                </p>
+                <Link to='/LineaFija' >DETALLES<i className="fas fa-angle-double-right">
+                    </i></Link>
+                
             </div>
             <div>
                 <img src={Inter} alt="Internet"/>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
+                <h3>Turbonett</h3>
+                <p>Aqui encontraras los siguientes WF:
+                    <br/> -Cables Bajos 
+                    <br/> -Servicios Class
+                    <br/> -SVA
+                    <br/> -ETC...
+                </p>
+                <Link to='/Turbonett' >DETALLES<i className="fas fa-angle-double-right">
+                    </i></Link>
             </div>
             <div>
                 <img src={Server} alt="Internet HFC"/>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
+                <h3>Internet HFC</h3>
+                <p>Aqui encontraras los siguientes WF:
+                    <br/> -Cables Bajos 
+                    <br/> -Servicios Class
+                    <br/> -SVA
+                    <br/> -ETC...
+                </p>
+                <Link to='/Hfc' >DETALLES<i className="fas fa-angle-double-right">
+                    </i></Link>
             </div>
             <div>
                 <img src={Hfc} alt="Claro TV"/>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
+                <h3>Claro TV HFC</h3>
+                <p>Aqui encontraras los siguientes WF:
+                    <br/> -Cables Bajos 
+                    <br/> -Servicios Class
+                    <br/> -SVA
+                    <br/> -ETC...
+                </p>
+                <Link to='/Ctv' >DETALLES<i className="fas fa-angle-double-right">
+                    </i></Link>
             </div>
             <div>
                 <img src={Dth} alt="DTH"/>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
+                <h3>Claro TV Satelital</h3>
+                <p>Aqui encontraras los siguientes WF:
+                    <br/> -Cables Bajos 
+                    <br/> -Servicios Class
+                    <br/> -SVA
+                    <br/> -ETC...
+                </p>
+                <Link to='/Dth' >DETALLES<i className="fas fa-angle-double-right">
+                    </i></Link>
             </div>
             <div>
                 <img src={Inalambrico} alt="Inalambrico"/>
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae quam facilis enim nihil hic cum magnam repudiandae similique eaque temporibus.</p>
-                <a href="#">Detalles <i className="fas fa-angle-double-right"></i></a>
+                <h3>Servicios Inalambricos</h3>
+                <p>Aqui encontraras los siguientes WF:
+                    <br/> -Cables Bajos 
+                    <br/> -Servicios Class
+                    <br/> -SVA
+                    <br/> -ETC...
+                </p>
+                <Link to='/Inalambrico' >DETALLES<i className="fas fa-angle-double-right">
+                    </i></Link>
             </div>
 
 
@@ -81,7 +118,13 @@ class Home extends React.Component{
 
     </div>
 
-    <section className="social">
+    
+
+   {/* 
+            esta es la seccion de redes si queres usarla 
+            solo descomenta la seccion 
+
+   <section className="social">
         <p>Visitanos</p>
         <div className="links">
             <a href="#">
@@ -98,7 +141,7 @@ class Home extends React.Component{
 
 
     </section>
-
+ */}
     <footer className="footer">
         <h5>Elaborado por: Pedro Canjura</h5>
         
