@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 import './Styles/Buscador.css';
-import Plantillas from '../Components/Plantillas';
+import PlantillasHFC from './PlantillasHFC';
 
 
 
-const Buscador = (props) => {
+
+const BuscadorHFC = (props) => {
 
   const defecto = props.defecto;
   const rutaDefecto = props.ruta;
@@ -53,10 +54,10 @@ const Buscador = (props) => {
       <label className="ruta">{ruta}</label>
       <br/>
       {/* este compente es el encargado de mostrar la plantilla depenedendo el item que se le pase */}
-     <Plantillas plantilla= {item}/>
+     <PlantillasHFC plantilla= {item}/>
     </div>
   )
 
 }
 
-export default Buscador;
+export default BuscadorHFC;

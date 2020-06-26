@@ -18,7 +18,7 @@ class LineaFija extends React.Component {
         return (
             <div className="wf">
                 <Topbar/>
-                <br/>
+                <h4 style={{color: 'white' , textAlign: 'center'}}>LINEA FIJA</h4>
                 <Buscador 
                 valores={valores} 
                 defecto={'Descuento'}  

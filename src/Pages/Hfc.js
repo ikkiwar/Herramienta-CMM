@@ -1,21 +1,25 @@
 import React from 'react';
 import Topbar from '../Components/Topbar';
-import Buscador from '../Components/Buscador';
+import BuscadorHFC from '../Components/BuscadorHFC';
 
 class Hfc extends React.Component{
 
     render(){
         const  valores=  [
             { value: 'descuento', label: 'Descuento' },
-            { value: 'Bajos', label: 'Cables Bajos' },
-            { value: 'class', label: 'Servicios Class' },
+            { value: 'vigente', label: 'sol vigente' },
+            { value: 'vencida', label: 'sol vencida' },
 
           ]
         return (
             <div className="wf">
                 <Topbar/>
-                <br/>
-                <Buscador valores={valores} defecto={'Descuentito'}/>
+                <h4 style={{color: 'white' , textAlign: 'center'}}>INTERNET HFC</h4>
+                <BuscadorHFC
+                valores={valores} 
+                defecto={'Descuentito'}
+                ruta={"Internet HFC > Gestiones > Modificaciones > WF > Asignacion de Ip Fija "}
+                />
             </div>
         )
     }

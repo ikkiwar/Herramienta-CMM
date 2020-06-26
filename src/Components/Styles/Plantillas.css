@@ -4,4 +4,12 @@
     text-align: left;
     font-size: 14px;
     
+    
+}
+
+.cont{
+   
+    width: 200%;
+    display: flex;
+
 }

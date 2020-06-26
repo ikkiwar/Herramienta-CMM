@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Styles/Plantillas.css';
 
-class Plantillas extends React.Component {
+
+class PlantillasTurbo extends React.Component {
 
     constructor(props) {
         super(props);
@@ -20,7 +21,7 @@ class Plantillas extends React.Component {
                 {
                     cadena: "NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
                     "\nCONTACTOS:\nFACTURA:\nCOMENTARIO DEL RECLAMO:",
-                    descripcion: " descuento"
+                    descripcion: "descuento T"
 
                 }
             )
@@ -29,8 +30,8 @@ class Plantillas extends React.Component {
             this.setState(
                 {
                     cadena: "NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
-                    "\nCONTACTOS:\nSOLICITUD:\nCOMENTARIO DEL RECLAMO:",
-                    descripcion: " Vigente"
+                    "\nCONTACTOS:\nSOLICITUD:\nCOMENTARIO DEL RECLAMO:" ,
+                    descripcion: "vigente "
 
                 }
             )
@@ -39,7 +40,7 @@ class Plantillas extends React.Component {
                 {
                     cadena: "NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
                     "\nCONTACTOS:\nSOLICITUD:\nDIAS VENCIDOS:\nCOMENTARIO DEL RECLAMO:",
-                    descripcion: " Vencido"
+                    descripcion: " vencida"
 
                 }
             )
@@ -56,12 +57,12 @@ class Plantillas extends React.Component {
     render() {
         console.log("el valor actual es:", this.state.cadena)
         return (
-            <div className="cont">
-                <textarea className="plantilla" rows="4" cols="40" value={this.state.cadena} 
+            <div  className="cont">
+                <textarea 
+                 className="plantilla" rows="4" cols="40"
+                value={this.state.cadena} 
                 onChange={this.hadleChange}
-                >
-
-                </textarea>
+                ></textarea>
                 <div style={{color: 'white' , marginLeft:'10%', display:'inline'}}>
                     <label>descripción:</label>
                     <br/>
@@ -74,38 +75,4 @@ class Plantillas extends React.Component {
 
 }
 
-/*  const Plantillas = (props) => {
-
-    const [texto, setTexto] = useState("NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
-        "\nCONTACTOS:\nFACTURA:\nCOMENTARIO DEL RECLAMO:")
-
-
-    useEffect(() => {
-        if (props.plantilla == "descuento") {
-            setTexto("NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
-                "\nCONTACTOS:\nFACTURA:\nCOMENTARIO DEL RECLAMO:")
-
-        } else if (props.plantilla == "vigente") {
-            setTexto("NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
-                "\nCONTACTOS:\nSOLICITUD:\nCOMENTARIO DEL RECLAMO:")
-        } else if (props.plantilla == "vencida") {
-            setTexto("NOMBRE:\nNUMERO DEL QUE LLAMA:\nNUMERO DEL SERVICIO:" +
-                "\nCONTACTOS:\nSOLICITUD:\nDIAS VENCIDOS:\nCOMENTARIO DEL RECLAMO:")
-        }
-
-    }
-    );
-
-
-    return (
-        <div>
-            <textarea className="plantilla" rows="4" cols="40" value={texto} >
-                
-            </textarea>
-        </div>
-    )
-
-} */
- 
-
-export default Plantillas;
+export default PlantillasTurbo;
